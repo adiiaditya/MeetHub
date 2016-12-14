@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+  <context-param>
+		<description>Location to store uploaded file</description>
+		<param-name>file-upload</param-name>
+		<param-value>
+         /usr/local/Cellar/tomcat/8.5.5/libexec/webapps/Project/files/
+     </param-value>
+	</context-param>
+	<context-param>
+		<description>Location to store uploaded Photo</description>
+		<param-name>photo-upload</param-name>
+		<param-value>
+            /usr/local/Cellar/tomcat/8.5.5/libexec/webapps/Project/images/
+    </param-value>
+	</context-param>
+
+<servlet>
+        <servlet-name>PrivateAboutServlet</servlet-name>
+        <servlet-class>PrivateAboutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrivateAboutServlet</servlet-name>
+        <url-pattern>/PrivateAboutServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>PublicAboutServlet</servlet-name>
+        <servlet-class>PublicAboutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PublicAboutServlet</servlet-name>
+        <url-pattern>/PublicAboutServlet</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+        <servlet-name>EditProfileServlet</servlet-name>
+        <servlet-class>EditProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditProfileServlet</servlet-name>
+        <url-pattern>/EditProfileServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>UpdateProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/UpdateProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AutoComplete</servlet-name>
+        <servlet-class>com.AutoComplete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AutoComplete</servlet-name>
+        <url-pattern>/autocomplete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+  		<servlet-name>UploadServlet</servlet-name>
+  		<servlet-class>com.UploadServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>UploadServlet</servlet-name>
+  		<url-pattern>/UploadServlet</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+  		<servlet-name>UploadProfilePhotoServlet</servlet-name>
+  		<servlet-class>com.UploadProfilePhotoServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>UploadProfilePhotoServlet</servlet-name>
+  		<url-pattern>/UploadProfilePhotoServlet</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+  		<servlet-name>UploadCoverPhotoServlet</servlet-name>
+  		<servlet-class>com.UploadCoverPhotoServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>UploadCoverPhotoServlet</servlet-name>
+  		<url-pattern>/UploadCoverPhotoServlet</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+  		<servlet-name>ReadServlet</servlet-name>
+  		<servlet-class>com.ReadFileServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ReadServlet</servlet-name>
+  		<url-pattern>/ReadServlet</url-pattern>
+  	</servlet-mapping>
+
+    <servlet>
+            <servlet-name>InsertCommentServlet</servlet-name>
+            <servlet-class>com.InsertCommentServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>InsertCommentServlet</servlet-name>
+            <url-pattern>/InsertCommentServlet</url-pattern>
+        </servlet-mapping>
+
+</web-app>

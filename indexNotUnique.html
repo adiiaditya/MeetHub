@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="hide-sidebar ls-bottom-footer" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>MeetHub</title>
+
+  <!-- Vendor CSS BUNDLE
+    Includes styling for all of the 3rd party libraries used with this module, such as Bootstrap, Font Awesome and others.
+    TIP: Using bundles will improve performance by reducing the number of network requests the client needs to make when loading the page. -->
+  <link href="css/vendor/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <style>
+    .alert {
+        position: relative;
+        top: 60px;
+        background-color: #ff9800;
+        color: white;
+    }
+
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .closebtn:hover {
+        color: black;
+    }
+    </style>
+
+
+
+  <!-- APP CSS BUNDLE [css/app/app.css]
+INCLUDES:
+    - The APP CSS CORE styling required by the "social-3" module, also available with main.css - see below;
+    - The APP CSS STANDALONE modules required by the "social-3" module;
+NOTE:
+    - This bundle may NOT include ALL of the available APP CSS STANDALONE modules;
+      It was optimised to load only what is actually used by the "social-3" module;
+      Other APP CSS STANDALONE modules may be available in addition to what's included with this bundle.
+      See src/less/themes/social-3/app.less
+TIP:
+    - Using bundles will improve performance by greatly reducing the number of network requests the client needs to make when loading the page. -->
+  <link href="css/app/app.css" rel="stylesheet">
+
+</head>
+
+<body class="login">
+<!--Alert-->
+ <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>Warning!</strong> User already exists. Kindly try logging in.
+ </div>
+ <!--End Alert-->
+  <div id="content">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-main navbar-primary navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <strong><a class="navbar-brand" href="index.html">MeetHub</a></strong>
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul style="padding:10px;" class="nav navbar-nav  navbar-right ">
+            <table border="0" style="border:none">
+                <tr>
+                  <form id='login' action='Login.jsp' method='post'
+      accept-charset='UTF-8'>
+                    <td style="padding:0 15px 0 15px;"><input type="text" tabindex="1" id="useremail" placeholder="Email ID" name="useremail" class="form-control" ></td>
+                    <td style="padding:0 15px 0 15px;"><input type="password" tabindex="2" id="userpassword" placeholder="Password" name="userpassword" class="form-control" ></td>
+                  <td ><button class="btn btn-primary">Login <i class="fa fa-fw fa-unlock-alt"></i></button></td>
+                </form>
+                </tr>
+          </table>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Fixed navbar Ends-->
+    <!-- Sign Up Form-->
+    <div class="container-fluid">
+      <div class="lock-container">
+      <h1>Connect with friends at different universities</h1>
+      <h2><small>It’s free and always will be.</small></h2>
+        <div class="panel panel-default text-center">
+          <div class="panel-body">
+           <form id='register' action='/Project/Register.jsp' method='post'
+    accept-charset='UTF-8'>
+            <input required class="form-control" type="text" name='name' id='name' maxlength="50" placeholder="Full Name">
+            <input required class="form-control" name="email" type="text" placeholder="Email ID">
+            <input required class="form-control" name="password" type="password" placeholder="Password">
+            <button class="btn btn-primary">Sign Up<i class="fa fa-fw fa-pencil-square-o"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign Up Form Ends-->
+  </div>
+
+  <!-- Footer -->
+  <script>
+// Get all elements with class="closebtn"
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+// Loop through all close buttons
+for (i = 0; i < close.length; i++) {
+    // When someone clicks on a close button
+    close[i].onclick = function(){
+
+        // Get the parent of <span class="closebtn"> (<div class="alert">)
+        var div = this.parentElement;
+
+        // Set the opacity of div to 0 (transparent)
+        div.style.opacity = "0";
+
+        // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+</script>
+  <footer class="footer">
+    <strong>MeetHub</strong> v1.0.0 &copy; Copyright 2016
+  </footer>
+  <!-- // Footer -->
+</body>
+</html>
