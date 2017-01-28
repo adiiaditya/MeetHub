@@ -22,5 +22,33 @@ Another academic project by [@adiiaditya](http://www.twitter.com/adiiaditya)
 * user can upload/download documents.
 * The document can be uploaded as private/public. If shared as public, users from any university can access the document while if shared as private, users from only that particular university can access the document under which it is uploaded.
 
+### Functional Demo
+* User tries logging in with wrong password.
+![](Screenshots/Wrong Password.png)
+
+* User tries to register with an already existing email address.
+![](Screenshots/User Exists Warning.png)
+
+* Prompt after user tries registering with invalid email address.
+![](Screenshots/Invalid email warning.png)
+
+* Profile Page of a User.
+![](Screenshots/Profile Page.png)
+
+* Update Profile screen.
+![](Screenshots/Update Profile Page.png)
+
+* User Timeline where posts are mentioned.
+![](Screenshots/Timeline Page.png)
+
+* User adding a friend.
+![](Screenshots/Add Friend.png)
+
+* After adding a friend, we get a pending approval message instead of Add as a Friend.
+![](Screenshots/Friend Pending Approval.png)
+
+* After accepting a friend request, we can remove them.
+![](Screenshots/Remove Friend.png)
+
 ## License
 Copyright (c) 2016 MeetHub
