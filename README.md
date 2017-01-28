@@ -18,9 +18,7 @@ Another academic project by [@adiiaditya](http://www.twitter.com/adiiaditya)
 * User can see the members of a particular university group.
 * User can see the tweets based on the university groups.
 * user can upload/download documents.
-* The document can be uploaded as private/public.
-	** If shared as public, users from any university can access the document.
-	** If shared as private, users from only that particular university can access the document under which it is uploaded.
+* The document can be uploaded as private/public. If shared as public, users from any university can access the document while if shared as private, users from only that particular university can access the document under which it is uploaded.
 
 ## License
 Copyright (c) 2016 MeetHub
