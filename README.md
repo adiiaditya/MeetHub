@@ -103,5 +103,30 @@ Another academic project by [@adiiaditya](http://www.twitter.com/adiiaditya)
 
 ![](Screenshots/AjaxScreenShot.png)
 
+### How to Deploy and Run
+1. Start the MongoDB server with mongod.exe. 
+2. Start the MySQL database
+	* database name is “MeetHubDatabase” so create that first
+	* The create table commands of each table that are necessary for the project to run are given in the queries.txt file
+	* Tables created are:
+	a. AddTogroup.
+	b. EventsTable.
+	c. FriendList.
+	d. MessageList.
+	e. StatusList.
+	f. UserEvent.
+	g. UserProfile.
+	* The information to automatically populate the database is given in the .sql files present in the Data folder. These can be imported by going to Server, Data Import, Import from self contained file, browse to the particular file to be imported, select default target schema as MeetHubDatabase and select start import.
+	* Repeat this step for all the files present in the Data folder.
+3. Add the two jar files that are present in the "jar files" folder that is given into the lib folder of apache.
+4. Run the following command to compile all the files:
+		javac -cp "/usr/local/Cellar/tomcat/8.5.5/libexec/lib/servlet-api.jar:/usr/local/Cellar/tomcat/8.5.5/libexec/lib/mysql-connector-java-5.1.40-bin.jar:/usr/local/Cellar/tomcat/8.5.5/libexec/lib/mongo-java-driver-3.2.2.jar:/usr/local/Cellar/tomcat/8.5.5/libexec/lib/commons-fileupload-1.3.2.jar:/usr/local/Cellar/tomcat/8.5.5/libexec/lib/commons-io-2.5.jar" *.java
+5. Copy "csj" folder on to the tomcat web app folder.
+6. Run the python script.
+	a. credentials.txt which contains all the login and access permission info.
+	b. The script searches for tweets with the different university names and generates four output files- Illinois Tech.txt, Harvard.txt, Stanford.txt, University Of Illinois.txt.
+7. Start tomcat server
+8. open the browser and type localhost:8080/Project/index.html
+
 ## License
 Copyright (c) 2016 MeetHub
