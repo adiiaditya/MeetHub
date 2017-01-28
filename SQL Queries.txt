@@ -1,0 +1,74 @@
+CREATE TABLE `AddToGroup` (
+  `university` varchar(40) DEFAULT NULL,
+  `name` varchar(40) DEFAULT NULL,
+  `file` varchar(100) DEFAULT NULL,
+  `status` varchar(1000) DEFAULT NULL,
+  `Date` varchar(40) DEFAULT NULL,
+  `Time` varchar(40) DEFAULT NULL,
+  `accessSpecifier` varchar(40) DEFAULT NULL
+);
+
+
+CREATE TABLE `EventsTable` (
+  `eventadmin` varchar(20) DEFAULT NULL,
+  `eventname` varchar(30) DEFAULT NULL,
+  `eventlocation` varchar(50) DEFAULT NULL,
+  `eventdate` varchar(20) DEFAULT NULL,
+  `eventtime` varchar(10) DEFAULT NULL,
+  `eventtype` varchar(20) DEFAULT NULL,
+  `eventimage` varchar(50) DEFAULT NULL
+);
+
+
+CREATE TABLE `FriendList` (
+  `username` varchar(40) NOT NULL,
+  `friendname` varchar(40) NOT NULL,
+  `status` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`username`,`friendname`)
+);
+
+
+CREATE TABLE `MessageList` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fromEmailID` varchar(200) DEFAULT NULL,
+  `toEmailID` varchar(200) DEFAULT NULL,
+  `fromUser` varchar(200) DEFAULT NULL,
+  `messageText` varchar(500) DEFAULT NULL,
+  `sentOn` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `StatusList` (
+  `email` varchar(40) NOT NULL,
+  `status` varchar(40) NOT NULL,
+  `date` varchar(40) DEFAULT NULL,
+  `likes` int(11) DEFAULT NULL,
+  PRIMARY KEY (`email`,`status`)
+);
+
+
+CREATE TABLE `UserEvent` (
+  `eventadmin` varchar(30) NOT NULL,
+  `eventname` varchar(30) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  PRIMARY KEY (`eventadmin`,`eventname`,`username`)
+);
+
+
+CREATE TABLE `UserProfile` (
+  `name` varchar(40) DEFAULT NULL,
+  `email` varchar(40) NOT NULL,
+  `password` varchar(40) DEFAULT NULL,
+  `profilepic` varchar(1000) DEFAULT NULL,
+  `coverpic` varchar(1000) DEFAULT NULL,
+  `university` varchar(40) DEFAULT NULL,
+  `dateofbirth` varchar(40) DEFAULT NULL,
+  `major` varchar(40) DEFAULT NULL,
+  `city` varchar(40) DEFAULT NULL,
+  `joindate` varchar(40) DEFAULT NULL,
+  `leavingdate` varchar(40) DEFAULT NULL,
+  `gender` varchar(40) DEFAULT NULL,
+  `phone` varchar(40) DEFAULT NULL,
+  PRIMARY KEY (`email`)
+) ;
