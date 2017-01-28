@@ -4,6 +4,8 @@ MeetHub is a platform for students to connect with students form different unive
 
 Another academic project by [@adiiaditya](http://www.twitter.com/adiiaditya)
 
+![](Screenshots/Home Page.png)
+
 ### Features
 * User can register and login using .edu mail-id.
 * User can upload a profile and cover picture and update their profile information.
