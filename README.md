@@ -24,31 +24,84 @@ Another academic project by [@adiiaditya](http://www.twitter.com/adiiaditya)
 
 ### Functional Demo
 * User tries logging in with wrong password.
+
 ![](Screenshots/Wrong Password.png)
 
 * User tries to register with an already existing email address.
+
 ![](Screenshots/User Exists Warning.png)
 
 * Prompt after user tries registering with invalid email address.
+
 ![](Screenshots/Invalid email warning.png)
 
 * Profile Page of a User.
+
 ![](Screenshots/Profile Page.png)
 
 * Update Profile screen.
+
 ![](Screenshots/Update Profile Page.png)
 
 * User Timeline where posts are mentioned.
+
 ![](Screenshots/Timeline Page.png)
 
 * User adding a friend.
+
 ![](Screenshots/Add Friend.png)
 
 * After adding a friend, we get a pending approval message instead of Add as a Friend.
+
 ![](Screenshots/Friend Pending Approval.png)
 
 * After accepting a friend request, we can remove them.
+
 ![](Screenshots/Remove Friend.png)
+
+* Friends Page displaying friends and common friends
+
+![](Screenshots/Friends Page.png)
+
+* Events Page along with events created
+
+![](Screenshots/Created Events Page.png)
+
+* Create Events Form page
+
+![](Screenshots/Create Event Form.png)
+
+* Groups page
+
+![](Screenshots/Groups Page.png)
+
+* Inside a group, display group users and tweets
+
+![](Screenshots/AjaxGroupTwitter Screenshot.png)
+
+* Empty Inbox
+
+![](Screenshots/Empty Inbox Page.png)
+
+* Send New Message
+
+![](Screenshots/Send New Message.png)
+
+* Inbox Message being displayed for the receiver user
+
+![](Screenshots/Inbox Message Page.png)
+
+* After replying to the message
+
+![](Screenshots/Display Message Page.png)
+
+* Notifications Page
+
+![](Screenshots/Notification Page.png)
+
+* Search for users
+
+![](Screenshots/AjaxScreenShot.png)
 
 ## License
 Copyright (c) 2016 MeetHub
