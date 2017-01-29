@@ -129,7 +129,7 @@ Another academic project by [@adiiaditya](http://www.twitter.com/adiiaditya)
 8. open the browser and type localhost:8080/Project/index.html
 
 ## License
-Copyright (c) 2016 MeetHub
+Copyright (c) 2016 Aditya Kumar
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
